@@ -1,64 +1,276 @@
-body{
-    background-color: aliceblue;
+* {
+    margin: 0;
+    padding: 0;
 }
-.container{
+
+header {
+    background-color: rgba(155, 145, 145, 0.349);
+}
+
+.head ul {
     display: flex;
-    flex-wrap: wrap;
-    width: 100% ;
-    justify-content: left;
-    gap: 50px;
-}
-.title{
-    color: rgb(47, 14, 192);
-    text-align: left;
+    justify-content: space-between;
 }
 
-.card{
-    display:inline-block;
+.head ul li {
+    margin: 0px 15%;
+    padding: 10px;
+}
+.head ul li a{
+    text-decoration: none;
+}
 
-    width: 430px;
-    background-color: rgb(198, 240, 240);
-    border-radius: 20px;
-    padding: 20px;
+.imgi {
+    margin: 0px 15%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin: 10px 15%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    background-color: rgba(155, 145, 145, 0.349);;
+    border: 1px solid black;
+}
+
+.container {
+ 
+    margin: 0px 15%;
+    box-sizing: border-box;
+}
+
+.box1 {
+
+    margin: 20px 0px;
+    padding: 12px 0px;
+    width: 80%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+form {
+    width: 100%;
  
 }
-div > img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%; 
-    border-color: black;
+
+fieldset {
+    width: 90%;
+    margin-left: 25px;
+    border: 0px;
+ 
 }
 
-.right{
-    padding: 2px;
-    float: right;
-
-}
-.left{
-    padding: 10px;
-    float: left;
+.row {
+    font-size: 20px;
+    margin: 19px ;
 }
 
-.clear{
-    clear: both;
+
+
+ .first input {
+    margin: 10px;
 }
-span img {
-    float: right;
-    height:70px;
-    width: 70px;
+
+
+textarea{
+    margin:10px;
 }
-span{
-    text-align: left;
+
+
+.top {
+    background-color: rgb(46, 181, 243);
+    border: 1px solid black;
+}
+
+.bar {
+   
+    margin: 0px 15%;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
 
 }
 
-@media  only screen and (max-width : 800px) {
-    .container{
+.mid1 {
+    margin: 19px 0;
+    font-size: 20px;
+}
+
+.mid2 {
+ 
+    width: 20%;
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.mid2 input {
+    margin: 15px 0px;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.video {
+    background-color: rgb(204, 201, 201);
+}
+
+.vid {
+    margin: 0px 15%;
+}
+
+.zero {
+    display: flex;
+   
+    gap: 65px;
+}
+
+.zero img {
+    margin: 20px 0;
+    width: 45%;
+ 
+}
+.first{
+    width: auto;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.second {
+    width: auto;
+    margin: 10px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.project {
+    margin: 0px 15%;
+}
+
+.prj {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+ 
+}
+
+.t1 {
+    width: 29%;
+    
+}
+
+.t1 img {
+    width: 300px;
+    height:200px;
+}
+
+.t1 div p {
+    font-size: large;
+}
+
+.footer {
+    display: flex;
+    justify-content:space-between;
+    gap: 150px;
+}
+@media screen and (max-width:900px) {
+    .head ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box1 {
+        margin: 20px 0px;
+        padding: 12px 0px;
+        width: 80%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        gap:20px;
-        margin-left: 0;
+        gap: 100px;
+        justify-content: space-between;
+    }
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .zero {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+    }
+    .prj {
+        display:grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+    .t1 div p {
+        font-size:medium;
+    }
+    .footer {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
     }
     
+
+}
+@media screen and (max-width:700px) {
+    .navbar ul {
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .box1 {
+        margin: 20px 0px;
+        padding: 12px 0px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: space-between;
+    }
+    .mid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .zero {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+    }
+    .prj {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 15px;
+    
+    }
+    .footer {
+        display:grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+
 }
