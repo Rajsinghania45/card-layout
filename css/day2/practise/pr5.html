@@ -20,7 +20,7 @@
             border-bottom: 4px solid cyan;
             justify-content: space-around;
             align-items: center;
-            /* height: 200px; */
+       
         }
 
         .right {
@@ -68,52 +68,40 @@
             padding-top: 10px;
             margin: 0;
         }
-        .container2 {
-            display: flex;
-            flex-direction: row;
-            background-color: rgb(118, 238, 94);
-            width: auto;
-            height: auto;
 
-        }
-        .uppermenu {
-            display: inline-flex;
-            border: 2px solid rgb(185, 14, 14);
-            background-color:rgb(232, 182, 238);
-            padding: 0;
-            margin: 0;
-        }
-
-        nav {
-            width: 100%;
-            height: auto;
-            color: #fff;
-            z-index: auto;
-        }
-
-        .uppermenu ul li {
-            list-style-type: none;
-            display: inline;
-            line-height: 40px;
-            padding: 0px 20px;
-        }
-
-       
-
+     
         .content {
             height: auto;
             width: auto;
             margin: 10px;
             float: right;
+        
             box-shadow: 0 0 32px whitesmoke;
         }
+        .text {
+            display: block;
+       
+            flex-direction: column;
+        }
+       
+        .flex-container {
+          display: flex;
+          background-color: DodgerBlue;
+          align-items: center;
+          flex-wrap: wrap;
+          flex-flow: row-reverse;
+        }
+        
+        .flex-container > div {
+          background-color: #f1f1f1;
+          margin: 10px;
+          padding: 20px;
+          font-size: 30px;
+          border: 2px solid green
 
+        }
 
-        /* .content h1 {
-            font-size: 75px;
-            color: rgb(3, 72, 128);
-            text-shadow: 0 0 30px greenyellow;
-        } */
+     
         @media only screen and (max-width:800px) {
             .leftbar {
                 width: 35%;
@@ -152,21 +140,16 @@
                 text-align: start;
             }
 
-            /* .content img {
-                width: 15rem;
-                height: 15rem;
-                margin-top: 20px;
-            } */
-
             .row2 a {
                 font-size: 60%;
             }
-            .uppermenu ul li {
-            list-style-type: none;
-            display:flex;
-            flex-direction: column;
-            line-height: 40px;
-            padding: 0px 20px;
+            .flex-container {
+          display: flex;
+          flex-direction: column;
+          background-color: DodgerBlue;
+          align-items: center;
+          flex-wrap: wrap;
+          flex-flow: column-reverse;
         }
         }
     </style>
@@ -215,42 +198,43 @@
                     <ul>
                         <li>Assignment </li>
                         <ul>
-                            <li> <a href="/css/day 2/assignemnt/ass21.html">Assignment 1</a> </li>
-                            <li><a href="/css/day 2/assignemnt/ass22.html">Assignment 2</a></li>
-                            <li><a href="/css/day 2/assignemnt/ass3/index.html">Assignment 3</a></li>
-                            <li><a href="/css/day 2/assignemnt/ass4/layout.html">Assignment 4</a></li>
-                            <li><a href="/css/day 2/assignemnt/ass5/index.html">Assignment 5</a></li>
+                            <li> <a href="/css/day2/assignemnt/ass21.html">Assignment 1</a> </li>
+                            <li><a href="/css/day2/assignemnt/ass22.html">Assignment 2</a></li>
+                            <li><a href="/css/day2/assignemnt/ass3/index.html">Assignment 3</a></li>
+                            <li><a href="/css/day2/assignemnt/ass4/layout.html">Assignment 4</a></li>
+                            <li><a href="/css/day2/assignemnt/ass5/index.html">Assignment 5</a></li>
                         </ul>
                         <li> Practice</li>
                         <ul>
-                            <li> <a href="/css/day 2/practise/pr5.html">Practice 5</a> </li>
-                            <li> <a href="/css/day 2/practise/pr6.html">Practice 6</a> </li>
-                            <li> <a href="/css/day 2/practise/pr7.html">Practice 7</a> </li>
+                            <li> <a href="/css/day2/practise/pr5.html">Practice 5</a> </li>
+                            <li> <a href="/css/day2/practise/pr6.html">Practice 6</a> </li>
+                            <li> <a href="/css/day2/practise/pr7.html">Practice 7</a> </li>
                         </ul>
                     </ul>
                 </ul>
             </div>
             <div class="content">
-                
-                    <div class="container2">
-                        <header>
-                            <h1> Welcome to Sabarmati Tours and Travels </h1>
-                        </header>
+                <div class="text">
+                    <h1>flex box practise 1 </h1>
+    
+    
+                    <div class="flex-container">
+    
+    
+                        <div>home</div>
+                        <div>about us </div>
+                        <div>help</div>
                     </div>
     
-                    <nav>
-                        <div class="item">
-                            <div class="uppermenu">
-                                <ul>
-                                    <li><a href="#"> Home</a></li>
-                                    <li><a href="#"> Site map </a></li>
-                                    <li><a href="#"> Contact us </a></li>
-                                    <li><a href="#"> About us </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                
+                    <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.
+                    </p>
+    
+                    <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+                    <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. </p>
+    
+                </div>
             </div>
         </div>
 

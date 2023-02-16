@@ -20,7 +20,7 @@
             border-bottom: 4px solid cyan;
             justify-content: space-around;
             align-items: center;
-            /* height: 200px; */
+          
         }
 
         .right {
@@ -69,69 +69,48 @@
             margin: 0;
         }
 
-        /* .content {
-            align-self: center;
-        }
-
-        .content img {
-            width: 30rem;
-            height: 30rem;
-            align-self: center;
-        } */
-
-        /* .content {
-            text-align: center;
-        } */
-
+      
         .content {
             height: auto;
             width: auto;
             margin: 10px;
             float: right;
-            /* background-color: rgb(189, 222, 241); */
-            /* display: flex; */
-            /* justify-content: center;
-            align-items: center; */
+        
             box-shadow: 0 0 32px whitesmoke;
         }
 
-        .content div  {
-            border: 2px solid blue;
-            font-size: 20px;
+        .head {
+            text-align: center;
+            text-decoration-line: underline;
+            color: blue;
         }
 
-        @media screen and (max-width:500px) {
-            .content  div {
-                border: 2px solid red;
-            }
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
-        @media screen and (max-width:450px) {
-
-            .content  div {
-                border: 2px solid red;
-                font-size: 15px;
-            }
+        .content img {
+            width: 350px;
+            height: 300px;
+            padding: 5px;
+            margin: 5px;
         }
 
-        @media screen and (max-width:400px) {
-
-            .content  div {
-                display: none;
-            }
-        }
-
-        /* .content h1 {
-            font-size: 75px;
-            color: rgb(3, 72, 128);
-            text-shadow: 0 0 30px greenyellow;
-        } */
+       
         @media only screen and (max-width:800px) {
             .leftbar {
                 width: 35%;
                 height: 100vh;
-                background-color: aliceblue;
+                background-color:aliceblue;
             }
+            .content img {
+            width: 245px;
+            height: 180px;
+            padding: 3px;
+            margin: 3px;
+        }
 
         }
 
@@ -164,12 +143,16 @@
                 text-align: start;
             }
 
-
             .row2 a {
                 font-size: 60%;
             }
-
-
+            .content img {
+            width: 150px;
+            height: 100px;
+            padding: 3px;
+            margin: 3px;
+        }
+ 
         }
     </style>
 </head>
@@ -217,33 +200,45 @@
                     <ul>
                         <li>Assignment </li>
                         <ul>
-                            <li> <a href="/css/day 2/assignemnt/ass21.html">Assignment 1</a> </li>
-                            <li><a href="/css/day 2/assignemnt/ass22.html">Assignment 2</a></li>
-                            <li><a href="/css/day 2/assignemnt/ass3/index.html">Assignment 3</a></li>
-                            <li><a href="/css/day 2/assignemnt/ass4/layout.html">Assignment 4</a></li>
-                            <li><a href="/css/day 2/assignemnt/ass5/index.html">Assignment 5</a></li>
+                            <li> <a href="/css/day2/assignemnt/ass21.html">Assignment 1</a> </li>
+                            <li><a href="/css/day2/assignemnt/ass22.html">Assignment 2</a></li>
+                            <li><a href="/css/day2/assignemnt/ass3/index.html">Assignment 3</a></li>
+                            <li><a href="/css/day2/assignemnt/ass4/layout.html">Assignment 4</a></li>
+                            <li><a href="/css/day2/assignemnt/ass5/index.html">Assignment 5</a></li>
                         </ul>
                         <li> Practice</li>
                         <ul>
-                            <li> <a href="/css/day 2/practise/pr5.html">Practice 5</a> </li>
-                            <li> <a href="/css/day 2/practise/pr6.html">Practice 6</a> </li>
-                            <li> <a href="/css/day 2/practise/pr7.html">Practice 7</a> </li>
+                            <li> <a href="/css/day2/practise/pr5.html">Practice 5</a> </li>
+                            <li> <a href="/css/day2/practise/pr6.html">Practice 6</a> </li>
+                            <li> <a href="/css/day2/practise/pr7.html">Practice 7</a> </li>
                         </ul>
                     </ul>
                 </ul>
             </div>
             <div class="content">
-                <div>
-                    <h1> Header tag is used </h1>
+                <div class="head">
+                    <h1>IMAGE GALLERY using flex </h1>
                     <p>
-                        For the name of an act as serious as killing someone, assassination literally translates to
-                        buttbuttinationNorth
-                        America should be called Russia since people are always moving so fast.
-                        GraliticaMost streets are two-way streets...why does that make love so special?
-                        A tagline for a car company that prides itself on its morals and ethics: Take the High Road
+                        resize the browser to reflect changes
                     </p>
                 </div>
-
+                <div class="container2">
+                    <div class="item">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="picture 1">
+                        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg"
+                            alt="picture 2">
+                        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                            alt="picture 3">
+                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9va3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                            alt="picture 4">
+                        <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+                            alt="picture 5">
+                        <img src="https://ghantee.com/wp-content/uploads/2022/08/most-beautiful-trishul-image-on-the-internet-today-576x1024.jpg"
+                            alt="picture 6">
+                        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg"
+                            alt="picture 7">
+                    </div>
+                </div>
             </div>
         </div>
 
