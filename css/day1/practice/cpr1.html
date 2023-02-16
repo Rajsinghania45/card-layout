@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            background-color: #3a383846;
+            width: auto;
+            border-bottom: 4px solid cyan;
+            justify-content: space-around;
+            align-items: center;
+            /* height: 200px; */
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right a {
+            padding: 5px;
+        }
+
+        .right {
+            display: flex;
+        }
+
+        .left img {
+            height: 108px;
+            width: 150px;
+        }
+
+        .header a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        .leftbar {
+            width: 25%;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+
+        .leftbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .leftbar ul {
+            padding-top: 10px;
+            margin: 0;
+        }
+
+        /* .content {
+            align-self: center;
+        } */
+
+        .content img {
+            width: 30rem;
+            height: 30rem;
+            align-self: center;
+        }
+
+        /* .content {
+            text-align: center;
+        } */
+
+        .content {
+            height: auto;
+            width: auto;
+            /* margin: 100px; */
+            /* background-color: rgb(189, 222, 241); */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            box-shadow: 0 0 32px whitesmoke;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        .content img {
+            margin-top: 50px;
+            box-shadow: 0 0 32px whitesmoke;
+        }
+
+        table {
+
+            border: 2px solid black;
+            margin-left: 550px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        p {
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead {
+            text-align: center;
+        }
+
+        #border {
+            border: 1px solid black;
+        }
+
+        /* .content h1 {
+            font-size: 75px;
+            color: rgb(3, 72, 128);
+            text-shadow: 0 0 30px greenyellow;
+        } */
+        @media only screen and (max-width:800px) {
+            .leftbar {
+                width: 35%;
+                height: 100vh;
+                background-color: aliceblue;
+            }
+            .content {
+            height: auto;
+            width: 60%;
+            /* margin: 100px; */
+            /* background-color: rgb(189, 222, 241); */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            box-shadow: 0 0 32px whitesmoke;
+        }
+
+            table {
+
+                border: 2px solid black;
+                /* margin-left: 550px; */
+                text-align: center;
+                padding: 10px;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 300px) {
+            .header {
+                display: block;
+                height: 100px;
+                text-align: center;
+            }
+
+            .left img {
+                margin-top: 20px;
+                height: 50px;
+                width: 50px;
+                ;
+            }
+
+            .header a {
+                font-size: 50%;
+            }
+
+            .row2 {
+                display: block;
+                text-align: center;
+            }
+
+            .leftbar {
+                width: auto;
+                height: auto;
+                text-align: start;
+            }
+
+            .content img {
+                width: 15rem;
+                height: 15rem;
+                margin-top: 20px;
+            }
+
+            .row2 a {
+                font-size: 60%;
+            }
+
+            .content {
+                margin: 50px;
+            }
+
+            .content img {
+                margin-top: 30px;
+                height: 100px;
+                width: 100px;
+            }
+
+            .content h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.I9OHBCcekIMpLu6l7ClBngHaDm?pid=ImgDet&rs=1" alt="logo">
+            </div>
+            <div class="right">
+                <div><a href="#">Home</a></div>
+                <div><a href="#">HTML</a></div>
+                <div><a href="#css">CSS</a></div>
+                <div><a href="#bootstrap">Bootstrap</a></div>
+                <div><a href="#javascript">JavaScript</a></div>
+                <div><a href="jquary">JQuery</a></div>
+                <div><a href="#miniproject">Mini Project</a></div>
+                <div><a href="sql">SQL</a></div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="leftbar">
+                <ul>
+                    <li>Day 1</li>
+                    <ul>
+                        <li>Assignment </li>
+                        <ul>
+                            <li> <a href="/css/day1/assignment/cass1.html">Assignment 1</a> </li>
+                            <li><a href="/css/day1/assignment/cass2.html">Assignemnt 2</a></li>
+                            <li><a href="/css/day1/assignment/cass3.html"> Assignment 3</a></li>
+                        </ul>
+                        <li> Practice</li>
+                        <ul>
+                            <li> <a href="/css/day1/practice/cpr1.html">Practice 1</a> </li>
+                            <li> <a href="/css/day1/practice/cpr2.html">Practice 2</a> </li>
+                            <li> <a href="/css/day1/practice/cpr3.html">Practice 3</a> </li>
+                            <li> <a href="/css/day1/practice/cpr4.html">Practice 4</a> </li>
+                        </ul>
+                    </ul>
+                </ul>
+
+                <ul>
+                    <li>Day 2</li>
+                    <ul>
+                        <li>Assignment </li>
+                        <ul>
+                            <li> <a href="/css/day 2/assignemnt/ass21.html">Assignment 1</a> </li>
+                            <li><a href="/css/day 2/assignemnt/ass22.html">Assignment 2</a></li>
+                            <li><a href="/css/day 2/assignemnt/ass3/index.html">Assignment 3</a></li>
+                            <li><a href="/css/day 2/assignemnt/ass4/layout.html">Assignment 4</a></li>
+                            <li><a href="/css/day 2/assignemnt/ass5/index.html">Assignment 5</a></li>
+                        </ul>
+                        <li> Practice</li>
+                        <ul>
+                            <li> <a href="/css/day 2/practise/pr5.html">Practice 5</a> </li>
+                            <li> <a href="/css/day 2/practise/pr6.html">Practice 6</a> </li>
+                            <li> <a href="/css/day 2/practise/pr7.html">Practice 7</a> </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+            <div class="content">
+                <table border="1" style="border-collapse: collapse;">
+                    <caption> STUDENT REPORT CARD </caption>
+                    <th colspan="3"> PERSONAL DETAILS: </th>
+                    <tr colspan="2">
+                        <td>Name</td>
+                        <td colspan="2">RAJSINGHANIA A. SHARMA</td>
+                    </tr>
+                    <tr>
+                        <td>Roll No.</td>
+                        <td colspan="2">4025</td>
+                    </tr>
+                    <tr>
+                        <td>Year Of Passing</td>
+                        <td colspan="2">2023</td>
+                    </tr>
+
+                    <th colspan="3"> CO-COLASTICS AREA : </th>
+                    <tr>
+                        <th>SUBJECT</th>
+                        <th>MARKS </th>
+                        <th>GRADE </th>
+                    </tr>
+                    <tr>
+                        <td>ENGLISH </td>
+                        <td>96</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td>HINDI </td>
+                        <td>85</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>MATHEMATICS </td>
+                        <td>90</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>SCIENCE </td>
+                        <td>92</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>SOCIAL SCIENCE </td>
+                        <td>96</td>
+                        <td>O</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

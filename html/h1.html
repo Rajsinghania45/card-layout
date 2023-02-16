@@ -15,7 +15,7 @@
         .header {
             display: flex;
             flex-direction: row;
-            background-color:#3a383846;
+            background-color: #3a383846;
             width: auto;
             border-bottom: 4px solid cyan;
             justify-content: space-around;
@@ -48,14 +48,14 @@
             font-size: 20px;
         }
 
-        /* .row2 {
+        .row2 {
             display: flex;
         }
 
         .leftbar {
-            width: 300px;
-            height: 815px;
-            background-color: rgb(134, 134, 134);
+            width: 25%;
+            height: 100vh;
+            background-color: aliceblue;
         }
 
         .leftbar a {
@@ -66,9 +66,8 @@
 
         .leftbar ul {
             padding-top: 10px;
-
             margin: 0;
-        } */
+        }
 
         .content {
             align-self: center;
@@ -80,18 +79,18 @@
             align-self: center;
         }
 
-         .content {
+        /* .content {
             text-align: center;
-        }
+        } */
 
         .content {
             height: auto;
             width: auto;
-            margin: 100px;
+            /* margin: 100px; */
             background-color: rgb(189, 222, 241);
             display: flex;
-            justify-content: center;
-            align-items: center;
+            /* justify-content: center;
+            align-items: center; */
             box-shadow: 0 0 32px whitesmoke;
         }
 
@@ -104,11 +103,11 @@
             box-shadow: 0 0 32px whitesmoke;
         }
 
-        .content h1 {
+        /* .content h1 {
             font-size: 75px;
             color: rgb(3, 72, 128);
             text-shadow: 0 0 30px greenyellow;
-        }
+        } */
 
         @media only screen and (max-width: 700px) {
             .header {
@@ -128,16 +127,16 @@
                 font-size: 50%;
             }
 
-            /* .row2 {
+            .row2 {
                 display: block;
                 text-align: center;
-            } */
+            } 
 
-            /* .leftbar {
+             .leftbar {
                 width: auto;
                 height: 180px;
                 text-align: start;
-            } */
+            } 
 
             .content img {
                 width: 15rem;
@@ -145,9 +144,9 @@
                 margin-top: 20px;
             }
 
-            /* .row2 a {
+            .row2 a {
                 font-size: 60%;
-            } */
+            }
 
             .content {
                 margin: 50px;
@@ -183,12 +182,29 @@
                 <div><a href="sql">SQL</a></div>
             </div>
         </div>
-        <div class="content">
-            <div class="image">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.I9OHBCcekIMpLu6l7ClBngHaDm?pid=ImgDet&rs=1" alt="Radix">
-                <h2>The Training Site</h2>
+        <div class="row2">
+            <div class="leftbar">
+                <ul>
+                    <li>Day 1</li>
+                    <ul>
+                        <li>Assignment </li>
+                        <ul>
+                            <li> <a href="/html/assignment/ass1.html">Assignment 1</a> </li>
+                            <li><a href="/html/assignment/ass2.html">Assignemnt 2</a></li>
+                        </ul>
+                        <li> Practice</li>
+                        <ul>
+                            <li> <a href="/html/practice/pr1.html">Practice 1</a> </li>
+                            <li> <a href="/html/practice/pr2.html">Practice 2</a> </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+            <div class="content">
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9v00g4XP1X0sFzxp64FIBSIgchtoRkAZSj_fjzq75u16gd3RcOmWYHJazTTHc6WSt30&usqp=CAU" alt="html logo">
             </div>
         </div>
+
     </div>
 </body>
 

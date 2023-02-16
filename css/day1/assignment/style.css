@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image:url("bg2.jfif") ; */
+    /* color: white; */
+    background-color: azure;
+}
+
+img {
+    margin-right: 30px;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+footer {
+    background-color: aqua;
+    color: black;
+    display: flex;
+}
+
+ol {
+    border-right: 1px solid white;
+    padding: 40px;
+    width: 1600px;
+    text-align: center;
+
+}
+
+li {
+    /* float:inline-start; */
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer {
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    padding-left: 150px;
+
+}
+
+
+a:hover {
+    border-bottom: 1px solid white;
+    background-color: rgb(235, 157, 170);
+}
+
+.display {
+    display: flex;
+}
+
+section {
+    overflow: visible;
+
+}
+
+.container {
+    width: 800px;
+    height: 700px;
+    color: white;
+    background-color: rgba(0, 255, 242, 0.836);
+    text-align: center;
+    border-right: 2px solid white;
+}
+
+h1 {
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+
+}
+
+@media only screen and (max-width:800px) {
+    .display {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .container {
+        width: 700px;
+        color: rgb(15, 13, 148);
+        background-color: aqua;
+        text-align: center;
+        border-right: 2px solid white;
+        margin-left: 30px;
+
+    }
+
+    footer {
+        background-color: aqua;
+        color: black;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    header {
+        height: max-content;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .container {
+        width: 500px;
+        color: rgb(15, 13, 148);
+        background-color: aqua;
+        text-align: center;
+        border-right: 2px solid white;
+        margin-left: 2px;
+
+    }
+
+    /* section{
+        height: max-content;
+        width: max-content;
+
+    } */
+
+    footer {
+        background-color: aqua;
+        color: black;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: block;
+        /* height: 40px; */
+        cursor: pointer;
+        /* width: 250px; */
+        text-align: center;
+        padding-left: 150px;
+
+    }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            background-color: #3a383846;
+            width: auto;
+            border-bottom: 4px solid cyan;
+            justify-content: space-around;
+            align-items: center;
+            /* height: 200px; */
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right a {
+            padding: 5px;
+        }
+
+        .right {
+            display: flex;
+        }
+
+        .left img {
+            height: 108px;
+            width: 150px;
+        }
+
+        .header a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        .leftbar {
+            width: 20%;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+
+        .leftbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .leftbar ul {
+            padding-top: 10px;
+            margin: 0;
+        }
+/* 
+        .content {
+            align-self: center;
+        } */
+
+        .content img {
+            width: 45rem;
+            height: 30rem;
+            align-self: center;
+        }
+
+        /* .content {
+            text-align: center;
+        } */
+
+        .content {
+            height: auto;
+            width: auto;
+            /* margin: 100px; */
+            /* background-color: rgb(189, 222, 241); */
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            box-shadow: 0 0 32px whitesmoke;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        .content img {
+            margin-top: 50px;
+            box-shadow: 0 0 32px whitesmoke;
+        }
+
+        /* .content h1 {
+            font-size: 75px;
+            color: rgb(3, 72, 128);
+            text-shadow: 0 0 30px greenyellow;
+        } */
+
+        @media only screen and (max-width: 768px) {
+            .header {
+                display: block;
+                height: 100px;
+                text-align: center;
+            }
+
+            .left img {
+                margin-top: 20px;
+                height: 50px;
+                width: 50px;
+                ;
+            }
+
+            .header a {
+                font-size: 50%;
+            }
+
+            .row2 {
+                display: block;
+                text-align: center;
+            }
+
+            .leftbar {
+                width: auto;
+                height: 180px;
+                text-align: start;
+            }
+
+            .content img {
+                width: 15rem;
+                height: 15rem;
+                margin-top: 20px;
+            }
+
+            .row2 a {
+                font-size: 60%;
+            }
+
+            .content {
+                margin: 50px;
+            }
+
+            .content img {
+                margin-top: 30px;
+                height: 100px;
+                width: 100px;
+            }
+
+            .content h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.I9OHBCcekIMpLu6l7ClBngHaDm?pid=ImgDet&rs=1" alt="logo">
+            </div>
+            <div class="right">
+                <div><a href="/index.html">Home</a></div>
+                <div><a href="/html/h1.html">HTML</a></div>
+                <div><a href="/css/c1.html">CSS</a></div>
+                <div><a href="#bootstrap">Bootstrap</a></div>
+                <div><a href="#javascript">JavaScript</a></div>
+                <div><a href="jquary">JQuery</a></div>
+                <div><a href="#miniproject">Mini Project</a></div>
+                <div><a href="sql">SQL</a></div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="leftbar">
+                <ul>
+                    <li>Day 1</li>
+                    <ul>
+                        <li>Assignment </li>
+                        <ul>
+                            <li> <a href="/html/assignment/ass1.html">Assignment 1</a> </li>
+                            <li><a href="/html/assignment/ass2.html">Assignemnt 2</a></li>
+                        </ul>
+                        <li> Practice</li>
+                        <ul>
+                            <li> <a href="/html/practice/pr1.html">Practice 1</a> </li>
+                            <li> <a href="/html/practice/pr2.html">Practice 2</a> </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="resume">
+                    <h1>
+                        RESUME
+                    </h1>
+                    <div>
+                        <h2> RAJSINGHANIA A. SHARMA</h2>
+                    </div>
+                    <div>
+                        <h3>CELL: 7584265893</h3>
+                        <h3>Email:abc45@gmail.com</h3>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3> OBJECTIVE </h3>
+                        <p> I am an outgoing and energetic (ask anybody) young professional, seeking a career that fits
+                            my professional skills, personality, and murderous tendencies.
+                            My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. I
+                            can bring world domination to your organization.</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>EDUCATION</h3>
+                            <li>B.TECH CSE </li>
+                            <li>12th SCI</li>
+                            <li> 10th CBSE </li>
+                        </ul>
+                        <HR>
+                        </HR>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>KEY EXPERTISE / SKILLS</h3>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PYTHON</li>
+                            <li>JAVA</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>HOBBIES</h3>
+                            <li>LEARNING </li>
+                            <li>WRITING </li>
+                            <li>READING </li>
+                            <li>COOKING </li>
+
+                        </ul>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>
+                            PROJECT VIDEO
+                        </h3>
+                        <Video width="320" height="240" autoplay muted controls>
+                            <source src="project video.mp4" type="video/mp4">
+                        </Video>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

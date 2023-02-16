@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: rgb(92, 127, 204);
+            color: black;
+            justify-content:space-between;
+            display: flex;
+            flex-wrap: wrap;
+            padding:30px 100px 30px 100px ;
+            position:sticky;
+
+        }
+        .content{
+            display: flex;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 35px rgb(135, 223, 84);
+        }
+        .sidebar{
+            background-color: aqua;
+            width: 25%;
+            text-align: center;
+            height: 700px;
+        }
+        h1{
+            text-shadow: 0px 0px 32px aliceblue;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            height: 40px;
+            padding-top: 10px;
+        }
+
+        a:hover {
+            background-color: azure;
+            transition: 1s;
+        }
+        #Projects li{
+            list-style: disc;
+        }
+        li{
+            height: 50px;
+            list-style-type: none;
+        }
+        .value{
+            display: none;
+        }
+        .value:target{
+            display: block;
+        }
+        @media screen and (max-width:600px) {
+            header{
+                text-align: center;
+                display: block;
+            }
+            img,h1,h2{
+                width: auto;
+                font-size: medium;
+
+            }
+            .content{
+            display:block;
+        }
+        .sidebar{
+            width: 100%;
+            height: auto;
+
+        }
+        li{
+            height: auto;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
+            alt="profile pic">
+        <div>
+            <h1> RAJSINGHANIA SHARMA</h1>
+            <h1> .NET Trainee </h1>
+        </div>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <li><a href="#personal-details"> PERSONAL DETAILS </a></li>
+            <li><a href="#Objective"> CAREER OBJECTIVE</a> </li>
+            <li><a href="#Education">EDUATION QUALIFICATION </a></li>
+            <li><a href="#Skills"> SKILLS </a></li>
+            <li><a href="#Projects "> PROJECTS </a></li>
+            <li><a href="#Hobbies"> HOBBIES </a></li>
+        </div>
+        <div class="text">
+            <div class="value" id="personal-details">
+                <h2>Contact no.: 8764876398</h2>
+                <h2>Email ID: rajsinghania45@gmail.com</h2>
+                <h2>Github : Rajsinghania45</h2>
+                <h2>LinkedIn: Rajsinghania Sharma </h2>
+            </div>
+            <div class="value" id="Objective">
+                <h2>Carreer Objective : </h2>
+                <p><span>Graduate of computer science with experience working across the full stack developmnet.
+                        Looking for a role where I can grow and learn from experienced team members while drawing an
+                        project experience i have already successfully executed . Seeking an entry- level position
+                        to begin my career in a high-level professional environment . </span></p>
+            </div>
+        </div>
+        <div class="value" id="Education">
+            <li> B-Tech CSE- Parul university - 8.71 CGPA </li>
+            <li>12th- CBSE - 89.9% </li>
+            <li>10th - CBSE - 10.0 CGPA</li>
+        </div>
+        <div class="value" id="Skills">
+            <ul>
+                <li>HTML/CSS</li>
+                <li>C/C++</li>
+                <li>Java </li>
+                <li>Python </li>
+                <li>SQL</li>
+                <li>Git </li>
+            </ul>
+        </div>
+        <div class="value" id="Hobbies">
+            <ul>
+                <li>Learning </li>
+                <li>Writing </li>
+                <li>Reading </li>
+                <li>Cooking </li>
+            </ul>
+        </div>
+        <div class="value" id="Projects">
+            <ul>
+                <li> Ratchet Handle</li>
+                <ul>
+                    <li> Designed multiplayer labyrinth and puzzle game with python </li>
+                    <li>Outsourced portion of the game to friends via Github </li>
+                </ul>
+                <li>River Guage </li>
+                <ul>
+                    <li> Built a working river guage from a culvert -mounted laser and Raspberry Pi</li>
+                    <li> Wrote software for the guage in Python </li>
+                </ul>
+                <li> Weather Widget </li>
+                <ul>
+                    <li> Built a working weather app</li>
+                    <li>Apps connected to OpenWeather API for real time data</li>
+                    <li>App's background is a map pulled from Google MAps API using current device location .Can be
+                        altered to show rain, cloud, fog and snow.</li>
+                    <li>App uses JavaScript , JQuery and CSS </li>
+                </ul>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
